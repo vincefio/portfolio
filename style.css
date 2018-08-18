@@ -278,6 +278,9 @@
     #logoText{
         bottom: 20%;
     }
+    #brand-logo{
+      font-size: 1.4em;
+    }
   }
   
   @keyframes traits {
