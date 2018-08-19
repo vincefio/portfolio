@@ -71,7 +71,8 @@
     text-shadow: 2px 2px #000;
     font-weight: bold;
     position: absolute;
-    left: 20%;
+    left: 25%;
+    right: 25%;
     top: 25%;
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -91,8 +92,8 @@
     position: absolute;
     bottom: 30%;
    /* background-color: white;*/
-    left: 40%;
-    
+    left: 25%;
+    right: 25%;
     text-align: center;
    
     /*border-radius: 50%;*/
@@ -171,6 +172,11 @@
    
   }
 
+  .projectImg{
+    display: block;
+    margin: 0 auto;
+  }
+
   .projectHeader{
       margin-bottom: 45px;
   }
@@ -180,7 +186,7 @@
 	display: inline-block;
 	overflow: hidden;
 	max-width: 100%;
-	height: auto;
+	height: 175px;
 }
 .hvrbox img {
     max-width: 100%;
@@ -239,13 +245,19 @@
 	display: block;
 }
 
+  @media screen and (max-width: 992px){
+    .hvrbox{
+      
+    }
+  }
+
   @media screen and (max-width: 782px){
     body{
        
       }
 
     #logoText{
-        left: 35%;
+        
     }
    
   }
@@ -258,15 +270,23 @@
       height: 700px;
     }
 
+    .parallax-container{
+      height: 350px !important;
+    }
+
+    #catchPhrase{
+      top: 7%;
+    }
+
     #logoText{
-        left: 22%;
+      bottom: 20%;
     }
     #catchPhrase{
-      left: 5%;
+     
   }
   }
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 512px) {
     .ulWrapper {
       height: 300px;
     }
@@ -276,10 +296,16 @@
       height: 300px;
     }
     #logoText{
-        bottom: 20%;
+       
     }
     #brand-logo{
       font-size: 1.4em;
+    }
+  }
+
+  @media screen and (max-width: 420px){
+    .headerButton{
+      width: 175px;
     }
   }
   
