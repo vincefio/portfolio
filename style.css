@@ -121,7 +121,7 @@
   /**********************DESIGN WRAP******************************/
   .designWrap {
     background-color: rgba(224, 224, 224, 0.2);
-    height: 500px;
+    height: 430px;
     position: relative;
   }
   
@@ -141,11 +141,11 @@
   margin: 0 auto;
     width: 0;
     height: 4px;
-    background:	 #0052cc;
+    background:	 #90caf9;
   }
   
   .designHeader:hover::after{
-    width: 10%;
+    width: 15%;
   }
   
   .designQualities {
@@ -169,7 +169,8 @@
   
   /*****************PROJECTS WRAP********************/
   .projectWrap {
-   
+   margin-left: 5%;
+   margin-right: 5%;
   }
 
   .projectImg{
@@ -186,10 +187,14 @@
 	display: inline-block;
 	overflow: hidden;
 	max-width: 100%;
-	height: 175px;
+  height: 175px;
+  margin-bottom: 25px;
 }
 .hvrbox img {
-    max-width: 100%;
+  height: 100% !important;
+    width: 100% !important;
+    display: block;
+    margin: 0 auto;
 }
 .hvrbox .hvrbox-layer_bottom {
 	display: block;
@@ -226,12 +231,32 @@
 	font-size: 18px;
 	display: inline-block;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	-moz-transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+.hvrbox-layer_top button{
+  text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox-layer_top .btn{
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  right: 25%;
 }
 .hvrbox .hvrbox-text_mobile {
 	font-size: 15px;
@@ -244,6 +269,7 @@
 .hvrbox.active .hvrbox-text_mobile {
 	display: block;
 }
+
 
   @media screen and (max-width: 992px){
     .hvrbox{
@@ -267,7 +293,7 @@
       width: 50%;
     }
     .designWrap {
-      height: 700px;
+      height: 635px;
     }
 
     .parallax-container{
