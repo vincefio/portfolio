@@ -67,7 +67,7 @@
   }
   
   #catchPhrase{
-    color: orange;
+    color: #ffa726;
     text-shadow: 2px 2px #000;
     font-weight: bold;
     position: absolute;
@@ -171,6 +171,7 @@
   .projectWrap {
    margin-left: 5%;
    margin-right: 5%;
+   
   }
 
   .projectImg{
@@ -270,6 +271,13 @@
 	display: block;
 }
 
+/************CONTACT WRAP**********************/
+.contactWrap {
+  background-color: rgba(224, 224, 224, 0.2);
+  height: 600px;
+  position: relative;
+}
+
 
   @media screen and (max-width: 992px){
     .hvrbox{
@@ -319,7 +327,7 @@
     .designWrap {
     }
     .projectWrap {
-      height: 300px;
+      
     }
     #logoText{
        
