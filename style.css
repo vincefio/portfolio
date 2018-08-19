@@ -307,6 +307,10 @@
     .headerButton{
       width: 175px;
     }
+
+    #logoText{
+      bottom: 10%;
+    }
   }
   
   @keyframes traits {
