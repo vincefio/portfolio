@@ -34,9 +34,9 @@
                 <li class="nav-item">
                     <a href="#projects">Projects</a>
                 </li>
-                <li class="nav-item">
+                <!--<li class="nav-item">
                     <a href="http://google.com" target="_blank">Blog</a>
-                </li>
+                </li>-->
             </ul>
         </div>
     </nav>
@@ -48,9 +48,9 @@
         <li>
             <a href="#projects">Projects</a>
         </li>
-        <li>
+        <!-- <li>
             <a href="http://google.com" target="_blank">Blog</a>
-        </li>
+        </li>-->
     </ul>
 
 
@@ -60,7 +60,7 @@
 
             <div class="parallax-container">
                 <h1 id="logoText">
-                    <a href="#projects" target="_blank" class="headerButton waves-effect waves-light btn-large">See My Work</a>
+                    <a id="workLink" href="#projects" class="headerButton waves-effect waves-light btn-large">See My Work</a>
 
                     <h3 id="catchPhrase">making big dreams happen</h3>
 
@@ -210,6 +210,10 @@
             $('.parallax').parallax();
 
             $('.sidenav').sidenav();
+
+            /*$('#workLink').on('click', (e) => {
+                e.preventDefault()
+            })*/
 
             $('.content').each(function (i) {
 
