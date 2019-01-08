@@ -159,7 +159,30 @@
                         <div class="hvrbox-text">Yo no se!</div>
                         <a class="waves-effect waves-light btn">Visit Website</a>
                     </div>
-                </div>new stuff,php, mas-->
+                </div>new stuff,php, mas
+            add_filter( 'gform_pre_render_2', 'your_function_name' );
+function your_function_name(){
+	//work with csv information
+	//$file = file('AmericanRecipe.csv');
+	if ( !file_exists(get_Stylesheet_Directory() ."/AmericanRecipe.csv") ) {
+    	echo '<script>console.log("file not found")</script>';
+    }
+
+	$file = fopen(get_Stylesheet_Directory() ."/AmericanRecipe.csv", "r");
+	echo '<script>console.log("'.$file.'")</script>';
+	
+	while(!feof($file)){
+		$content = fgetcsv($file);//read content file
+		$count = count($content);
+			for($i = 0; $i < $count; $i++){
+				echo $content[$i];
+			}
+		echo "<br/>";
+	}
+	//foreach ($file as $k)
+		//$csv[] = explode(',', $k);
+		//echo '<script>console.log("'.$csv.'")</script>';
+}-->
             </div>
         </div>
         <div class="contactWrap">
